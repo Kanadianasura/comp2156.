@@ -1,0 +1,21 @@
+name: CI Placeholder
+
+# Define event triggers
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+  pull_request:  # Optional: Trigger on pull requests to the main branch
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Specify the environment
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Placeholder Job
+      run: echo "This is a placeholder workflow to ensure success"

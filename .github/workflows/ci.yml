@@ -19,3 +19,6 @@ jobs:
 
     - name: Placeholder Job
       run: echo "This is a placeholder workflow to ensure success"
+      on:
+  workflow_dispatch:  # Allows you to trigger the workflow manually
+
